@@ -1,4 +1,5 @@
 import pandas as pd
+import random
 
 blue_df = pd.read_csv('blue_sky_books.csv', encoding='utf-8')
 
@@ -9,5 +10,10 @@ class word_serch:
 
         return title_df.to_json(force_ascii=False)
 
-class collum:
-    pass
+class random_serch:
+    def Sercher(self):
+        ls = range(1, 16224)
+        random_df = blue_df.take([random.choice(ls)])
+
+        return random_df
+
