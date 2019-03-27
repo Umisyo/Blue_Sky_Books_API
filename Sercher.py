@@ -1,7 +1,9 @@
+# coding: utf-8
+
 import pandas as pd
 import random
 
-blue_df = pd.read_csv('blue_sky_books.csv', encoding='utf-8')
+blue_df = pd.read_csv('blue_sky_books.csv')
 
 
 class All:
